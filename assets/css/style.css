@@ -1,0 +1,43 @@
+
+
+@font-face {
+    font-family: iranSans;
+    src: url('../fonts/iranSans.woff');
+}
+
+*,*:focus,*:hover{
+    outline:none;
+}
+
+div.head{   
+    
+    transform: translateX(-50%);
+    z-index: 1000;
+    position: absolute;
+    right: 0px;
+}
+input#search{
+    
+   
+    font-family: iranSans;
+    font-size: larger;
+    padding: 11px;
+    font-weight: 900;
+    margin: 20px;
+    border: #00000042 solid;
+    border-radius: 7px;
+    text-align: right;
+    background: #ffffff8f;
+    color: #696262;
+   
+}
+.map-container{
+    position: relative;
+
+}
+#map{
+    
+ 
+    width: 100%;
+
+}
