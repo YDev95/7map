@@ -31,6 +31,7 @@ function dd($var)
     echo "<pre style ='background: aliceblue; color: #bb0707; border-radius: 10px; padding: 10px; border-left: red solid; margin: 10px;';>";
     var_dump($var);
     echo '</pre>';
+   
 }
 
 
@@ -61,4 +62,11 @@ function message($msg,$url,$class){
 function redirect($url){
 
     header("Location: {$url}");
+}
+
+// make path to file or folder
+
+function getPath($path){
+
+    echo $_SERVER['DOCUMENT_ROOT'] ."/". $path;
 }

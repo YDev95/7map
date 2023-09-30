@@ -35,9 +35,171 @@ input#search{
     position: relative;
 
 }
+.modalOverlay{
+    background: #3f3e3e63;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10001;
+  
+    padding: 100px;
+
+}
+.location-modal{
+    background: #ffffffeb;
+    border-radius: 5px;
+    width: 40%;
+    margin: 0 auto;
+    height: auto;
+    padding: 10px
+}
 #map{
     
  
     width: 100%;
 
+}
+form{
+    margin: 0 auto;
+    width: 500px;
+    padding: 20px;
+    text-align: right;
+    direction: rtl ;
+}
+input{
+padding: 10px !important;
+margin: 5px;
+
+}
+
+button.form-submit{
+
+    width: 100px;
+    margin-right: 185px;
+    margin-top: 20px;
+    outline: none;
+    border: white;
+    background: #7fffd4;
+    font-family: 'iranSans';
+}
+
+button.form-submit :hover{
+    background-color: #147454;;
+    cursor: pointer;
+}
+a.close-modal{
+
+    text-decoration: none;
+    color: rgb(122, 114, 114);
+
+
+}
+
+a.close-modal :hover{
+    color: red;
+    cursor: pointer;
+
+}
+
+.modal-overlay {
+    position: fixed;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+<!-- adm styles --->
+
+.modal-overlay .modal {
+    width: 50%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 7px;
+    margin-top: -100px;
+    position: relative;
+}
+
+.modal-overlay .modal .close {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    color: #ffffff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.modal-overlay .modal h3.modal-title {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+
+
+.clear {
+    clear: both;
+}
+
+.search-box {
+    width: fit-content;
+}
+
+.search-results {
+    direction: rtl;
+    margin: -3px 50px 0 0;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 12px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #d9d7d4;
+}
+
+.result-item {
+    padding: 10px 5px;
+    border-bottom: 0px solid #f2f2f2;
+    max-width: 400px;
+}
+
+.result-item:hover {
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+.result-item span,
+.result-item a {
+    display: inline-block;
+}
+
+.result-item span.loc-type {
+    background: #149999;
+    color: #fff;
+    padding: 0px 7px 2px 7px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.result-item span.loc-title {
+    font-size: 15px;
+}
+
+img.currentLoc {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    width: 32px;
+    background: rgba(242, 209, 99, 0.8);
+    padding: 7px;
+    border-radius: 30px;
+    box-shadow: 1px 2px 13px #777;
+}
+
+img.currentLoc:hover {
+    cursor: pointer;
+    opacity: 0.7;
 }
