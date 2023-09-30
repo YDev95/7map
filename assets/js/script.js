@@ -129,7 +129,7 @@ $('#search').keyup(function(e){
         data: {keyword: searchInput},
         success: function(response){
             result.html(response);
-            result.slideDown();
+            result.slideDowsn();
 
         }
     })
